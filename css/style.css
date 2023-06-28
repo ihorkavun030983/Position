@@ -61,12 +61,11 @@ h1{
 
 .photo{
     position: relative;
-    max-width: 100%;
+    max-width: 600px;
+    margin: 0 auto 40px;
 }
 
 .photo img{
-    position: relative;
-    left: 300px;
     border-radius: 25px;
 }
 
@@ -78,14 +77,39 @@ h1{
 .text{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%); 
+    overflow: hidden;
+    height: 200px;
     background: rgba(255, 255, 255, 0.7);
     display: none;
     border-radius: 25px;
     padding: 20px;
+    margin: -100px 0 0;
     
 }
 .photo:hover .text{
     display: block;
+}
+.navigation{
+    width: 300px;
+    position: relative;
+
+}
+#sitenav{
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 40%;
+    border: 5px solid green;
+    background: greenyellow;
+    
+}
+#sitenav h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+#sitenav li{
+    font-size: 20px;
+    padding: 5px 0;
+    border: 5px solid rgb(5, 170, 54);
 }
